@@ -1,0 +1,111 @@
+1
+00:00:00,180 --> 00:00:00,960
+What's going on guys.
+
+2
+00:00:01,020 --> 00:00:02,500
+Welcome to your first project.
+
+3
+00:00:02,520 --> 00:00:07,960
+So I wanted to do something pretty simple but something that's pretty common for the first project of
+
+4
+00:00:07,960 --> 00:00:08,720
+the course.
+
+5
+00:00:08,880 --> 00:00:11,160
+And we're gonna do a form validator.
+
+6
+00:00:11,170 --> 00:00:16,540
+So we're gonna do some client side form validation and we'll first create the form with each team out
+
+7
+00:00:16,560 --> 00:00:21,930
+then we're gonna style it with CSX and then we're gonna go ahead and add our javascript now to begin
+
+8
+00:00:21,930 --> 00:00:22,170
+with.
+
+9
+00:00:22,170 --> 00:00:27,780
+We're gonna do this kind of I guess the easy way but not the best code.
+
+10
+00:00:27,870 --> 00:00:32,820
+Just a bunch of if statements with some validation and then we're going to completely refactor it and
+
+11
+00:00:32,820 --> 00:00:39,570
+create specific functions for each type of validation for instance to check required or check the length
+
+12
+00:00:39,930 --> 00:00:42,370
+or check to see if the passwords match.
+
+13
+00:00:42,450 --> 00:00:48,840
+So we'll write it in one way and then we'll completely refactor it to make it cleaner and make it more
+
+14
+00:00:48,840 --> 00:00:53,250
+scalable if we want to add more fields it'll be easy to add the validation.
+
+15
+00:00:53,290 --> 00:00:55,150
+OK so just to give you an example here.
+
+16
+00:00:55,290 --> 00:00:57,830
+If I were to submit I get a bunch of errors.
+
+17
+00:00:57,840 --> 00:01:00,240
+So every field is required.
+
+18
+00:01:00,240 --> 00:01:05,990
+Some of them have a men and max length so user name must be at least three characters.
+
+19
+00:01:06,000 --> 00:01:11,880
+If I type in Brad and submit you'll see that that's now highlighted green which means that it passed
+
+20
+00:01:12,180 --> 00:01:13,490
+for the email.
+
+21
+00:01:13,500 --> 00:01:22,220
+So if I just type in anything that's not going to work I to test at test dot com that's going to pass.
+
+22
+00:01:22,230 --> 00:01:29,820
+Now for the password has to be at least six characters if I do let's do three characters and submit
+
+23
+00:01:29,880 --> 00:01:31,770
+you'll see it still get that error.
+
+24
+00:01:31,770 --> 00:01:34,310
+Also the passwords don't match and they have to.
+
+25
+00:01:34,310 --> 00:01:42,940
+So it's two three four five six one two three four five six submit and now they both pass.
+
+26
+00:01:42,990 --> 00:01:49,680
+OK so we'll be dealing with JavaScript along with CSX because obviously we need to add certain classes
+
+27
+00:01:49,680 --> 00:01:55,260
+to make this green or red or display or hide the error messages.
+
+28
+00:01:55,260 --> 00:01:57,650
+So we're gonna go ahead and get started.
